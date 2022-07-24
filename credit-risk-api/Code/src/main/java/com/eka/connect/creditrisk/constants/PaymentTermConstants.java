@@ -1,0 +1,61 @@
+package com.eka.connect.creditrisk.constants;
+
+public class PaymentTermConstants {
+
+	public static final String _58_Days = "58 Days";
+	public static final String _57_Days = "57 Days";
+	public static final String _56_Days = "56 Days";
+	public static final String _55_Days = "55 Days";
+	public static final String _52_Days = "52 Days";
+	public static final String _50_Days = "50 Days";
+	public static final String _49_Days = "49 Days";
+	public static final String _48_Days = "48 Days";
+	public static final String _47_Days = "47 Days";
+	public static final String _46_Days = "46 Days";
+	public static final String _45_Days = "45 Days";
+	public static final String _44_Days = "44 Days";
+	public static final String _41_Days = "41 Days";
+	public static final String _32_Days = "32 Days";
+	public static final String _31_Days = "31 Days";
+	public static final String _30_Days = "30 Days";
+	public static final String _22_Days = "22 Days";
+	public static final String _21_Days = "21 Days";
+	public static final String _15_Days = "15 Days";
+	public static final String _14_Days = "14 Days";
+	public static final String _11_Days = "11 Days";
+	public static final String _9_Days = "9 Days";
+	public static final String _8_Days = "8 Days";
+	public static final String _7_Days = "7 Days";
+	public static final String _6_Days = "6 Days";
+	public static final String _5_Days = "5 Days";
+	public static final String _4_Days = "4 Days";
+	public static final String _3_Days = "3 Days";
+	public static final String _2_Days = "2 Days";
+	public static final String _0_Days = "0 Days";
+	public static final String _25_Days = "25 Days";
+	public static final String _90_Days = "90 Days";
+	public static final String _130_Days = "130 Days";
+	public static final String _FOB = "FOB";
+	public static final String _CIF = "CIF";
+	public static final String _CAD = "CAD";
+	public static final String _366_Days = "366 Days";
+	public static final String _365_Days = "365 Days";
+	public static final String _181_Days = "181 Days";
+	public static final String _76_Days = "76 Days";
+	public static final String _75_Days = "75 Days";
+	public static final String _74_Days = "74 Days";
+	public static final String _72_Days = "72 Days";
+	public static final String _71_Days = "71 Days";
+	public static final String _70_Days = "70 Days";
+	public static final String _69_Days = "69 Days";
+	public static final String _67_Days = "67 Days";
+	public static final String _66_Days = "66 Days";
+	public static final String _65_Days = "65 Days";
+	public static final String _64_Days = "64 Days";
+	public static final String _63_Days = "63 Days";
+	public static final String _62_Days = "62 Days";
+	public static final String _60_Days = "60 Days";
+	public static final String _59_Days = "59 Days";
+	public static final String _180 = "180";
+
+}

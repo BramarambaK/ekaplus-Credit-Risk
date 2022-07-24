@@ -1,0 +1,8 @@
+{
+    "appId": "5539617b-5075-4482-8bcc-26f76849eb89",
+    "workflowTaskName": "crawler_multiApi",
+    "task": "crawler_multiApi",
+    "output": {
+        "crawler_multiApi": {}
+    }
+}

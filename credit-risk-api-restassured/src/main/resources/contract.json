@@ -1,0 +1,78 @@
+{
+    "entityRefNo": null,
+    "counterParty": "West Africa Household Utilities Mfg Co.Ltd",
+    "counterPartyGroup": null,
+    "contractRefNo": "SC-1000135-MSB",
+    "operationType": "MODIFY",
+    "eventName": "Sales Contract Modify",
+    "limitRefNo": "",
+    "counterpartyRefNo": null,
+    "contractType": "Sales",
+    "paymentTerm": "SPrepayment 100%",
+    "prepaymentPercentage": null,
+    "itemDetails": [
+        {
+            "contractItemRefNo": "SC-1000135-MSB.1",
+            "payInCurrency": "USD",
+            "value": 51500,
+            "fromPeriod": 1519862400000,
+            "toPeriod": 1525046400000
+        },
+        {
+            "contractItemRefNo": "SC-1000135-MSB.2",
+            "payInCurrency": "USD",
+            "value": 72100,
+            "fromPeriod": 1519862400000,
+            "toPeriod": 1525046400000
+        },
+        {
+            "contractItemRefNo": "SC-1000135-MSB.3",
+            "payInCurrency": "USD",
+            "value": 92700,
+            "fromPeriod": 1519862400000,
+            "toPeriod": 1525046400000
+        },
+        {
+            "contractItemRefNo": "SC-1000135-MSB.4",
+            "payInCurrency": "USD",
+            "value": 61800,
+            "fromPeriod": 1519862400000,
+            "toPeriod": 1525046400000
+        },
+        {
+            "contractItemRefNo": "SC-1000135-MSB.5",
+            "payInCurrency": "USD",
+            "value": 82400,
+            "fromPeriod": 1519862400000,
+            "toPeriod": 1525046400000
+        },
+        {
+            "contractItemRefNo": "SC-1000135-MSB.6",
+            "payInCurrency": "USD",
+            "value": 103000,
+            "fromPeriod": 1519862400000,
+            "toPeriod": 1525046400000
+        },
+        {
+            "contractItemRefNo": "SC-1000135-MSB.7",
+            "payInCurrency": "USD",
+            "value": 41200,
+            "fromPeriod": 1519862400000,
+            "toPeriod": 1525046400000
+        },
+        {
+            "contractItemRefNo": "SC-1000135-MSB.8",
+            "payInCurrency": "USD",
+            "value": 20600,
+            "fromPeriod": 1519862400000,
+            "toPeriod": 1525046400000
+        },
+        {
+            "contractItemRefNo": "SC-1000135-MSB.9",
+            "payInCurrency": "USD",
+            "value": 30900,
+            "fromPeriod": 1519842600000,
+            "toPeriod": 1525026600000
+        }
+    ]
+}

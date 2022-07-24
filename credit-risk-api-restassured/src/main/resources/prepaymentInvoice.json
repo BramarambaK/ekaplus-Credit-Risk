@@ -1,0 +1,21 @@
+{
+  "contractDetails": [
+    {
+      "contractItemRefNo": "SC-1000135-MSB.1",
+      "contractRefNo": "SC-1000135-MSB",
+      "fromPeriod": 1519862400000,
+      "toPeriod": 1525046400000,
+      "gmrRefNo": "GMR-1",
+      "limitRefNo": "LM-01",
+      "payInCurrency": "USD",
+      "value": 0
+    }
+  ],
+  "contractType": "Sales",
+  "counterParty": "West Africa Household Utilities Mfg Co.Ltd",
+  "counterPartyGroup": null,
+  "entityRefNo": null,
+  "eventName": "Invoice",
+  "invoiceCounterParty": "West Africa Household Utilities Mfg Co.Ltd",
+  "paymentTerm": "SPrepayment 100%"
+}

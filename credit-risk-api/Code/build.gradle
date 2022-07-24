@@ -1,0 +1,96 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.10.RELEASE'
+	id 'java'
+	id 'maven-publish'
+}
+
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'eclipse'
+apply plugin: 'project-report'
+
+ 
+
+group = "$group"
+version = "$version"
+archivesBaseName = "$image_name"
+
+sourceCompatibility = "$java_version"
+
+repositories {
+	mavenCentral()
+	maven(){
+		url "$nexus_url"  
+	}
+	
+	jar {
+    manifest {
+        attributes 'Main-Class': 'com.eka.connect.creditrisk.CreditRiskApiApplication'
+    }
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+}
+dependencyManagement {
+  imports {
+  	mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Greenwich.SR3'
+ }
+}
+
+configurations.all {
+       resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        if (details.requested.group == 'org.springframework') {
+            details.useVersion "5.2.19.RELEASE"
+        }
+    }
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        if (details.requested.group == 'com.thoughtworks.xstream') {
+            details.useVersion "1.4.18"
+        }
+    }
+
+}
+
+
+dependencies {
+	compile 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	 compile 'org.springframework.boot:spring-boot-starter-aop'
+	// https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+	compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.3'
+	compile 'org.json:json:20171018'
+	compile 'io.springfox:springfox-swagger2:2.9.2'
+	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+	// https://mvnrepository.com/artifact/org.owasp.esapi/esapi
+	compile group: 'org.owasp.esapi', name: 'esapi', version: '2.2.0.0'
+	
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+bootJar {
+    manifest {
+        attributes ('Version': "$version",
+        'Revision' : System.properties['revision']==null?"not set":System.properties['revision'],
+        'Date': new java.text.SimpleDateFormat("ddMMMMyyyy").format(new Date()),
+        'Time': new java.text.SimpleDateFormat("HH:mm").format(new Date()))
+    }
+    
+}
+
+publishing {
+    publications {
+    	
+        impl(MavenPublication) {
+	    artifactId archivesBaseName
+            from components.java
+	 
+        }
+    }   
+    repositories {
+          maven {
+		url "$nexus_url"  
+		credentials {
+		     username = 'admin'
+		     password = 'admin123'
+		}
+	}
+    }
+}

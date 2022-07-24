@@ -1,0 +1,19 @@
+{
+  "contractDetails": [
+    {
+      "contractItemRefNo": "SC-1000135-MSB.1",
+      "contractRefNo": "SC-1000135-MSB",
+      "contractType": "Sales",
+      "counterParty": "West Africa Household Utilities Mfg Co.Ltd",
+      "counterPartyGroup": null,
+      "fromPeriod": "2017-07-21T17:32:28Z",
+      "limitRefNo": "",
+      "payInCurrency": "USD",
+      "paymentTerm": "SPrepayment 100%",
+      "toPeriod": "2017-09-21T17:32:28Z",
+      "value": 3244
+    }
+  ],
+  "entityRefNo": "test123",
+  "eventName": "PBS"
+}
